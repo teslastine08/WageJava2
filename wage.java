@@ -18,6 +18,14 @@ public class wage
 		double attandance = Math.floor(Math.random()*10)%3;
 		System.out.println("Attandance is: "+attandance);
 
+		
+		if( attandance == is_full )
+			emp_hrs = 8;
+		else if( attandance == is_part )
+			emp_hrs = 4;
+		else
+			emp_hrs = 0;
+
 		emp_wage = emp_hrs * emp_rate_per_hour;
 		System.out.println("Daily Wage: Rs."+emp_wage);
 	}
