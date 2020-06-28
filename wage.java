@@ -30,14 +30,14 @@ public class wage
                 }
         }
 
-        private int computeWage(emp Emmp)
+        private int computeWage(emp emply)
 
         {
 
         int hrs=0, total_hrs = 0;
         int totalWorkingDays = 0;
 
-        while (total_hrs <= Emmp.max_hrs_in_month && totalWorkingDays < Emmp.number_of_working_days)
+        while (total_hrs <= emply.max_hrs_in_month && totalWorkingDays < emply.number_of_working_days)
 
                 {
 
@@ -61,15 +61,15 @@ public class wage
                         System.out.println("Day->: " + totalWorkingDays + " Emp Hr: " +hrs);
                 }
 
-                return (total_hrs * Emmp.wagePerHr);
+                return (total_hrs * emply.wagePerHr);
 
                 }
                 public static void main(String[] args)
 
                 {
                         wage array = new wage();
-                        array.addCompanyEmpWage("google", 20, 2, 10);
-                        array.addCompanyEmpWage("Wallmart", 10, 4, 20);
+                        array.addCompanyEmpWage("HNG", 20, 28, 100);
+                        array.addCompanyEmpWage("ITC", 30, 30, 150);
                         array.computeWage();
                 }
 
