@@ -58,7 +58,7 @@ public class wage
                         }
 
                         total_hrs+=hrs;
-                        //System.out.println("Day->: " + totalWorkingDays + " Emp Hr: " +hrs);
+                        System.out.println("Day: " + totalWorkingDays + " Emp Hr: " +hrs);
                 }
 
                 return (total_hrs * emply.wagePerHr);
